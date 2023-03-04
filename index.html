@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О клубе</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Styles CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="headerContent d-flex justify-content-around align-items-center">
+            <div class="headerLogoBlock d-flex align-items-center">
+                <img class="logo" src="assets/img/logo.png" alt="">
+                <h5 class="logoTitle">Фан-клуб Доры</h5>
+            </div>
+            <div class="headerNavBlock d-flex">
+                <li class="navItem">
+                    <a class="navLink" href="index.html">О клубе</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="news.html">Наши новости</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="contacts.html">Контакты</a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <section class="full-page section-1">
+        <h1 class="full-pageTitle">Фан-клуб Доры</h1>
+        <div class="quickMessage" id="quickMessage"></div>
+    </section>
+
+    <section class="indexAbout">
+        <p class="indexAboutText">
+            Фан-клуб Доры – сообщество истинных поклонников певицы Доры<br>
+        </p>
+        <p class="indexAboutText">
+            Став участником клуба вы сможете найти схожих по интересам людей, участвовать в специальных мероприятиях, получать призы и конечно-же получить билеты на концерт Доры
+        </p>
+    </section>
+
+    <section class="indexTools">
+        <div class="container">
+            <h4 class="indexToolsTitle">
+                Наши локации
+            </h4>
+            <div class="indexToolsItem d-flex justify-content-between align-items-center">
+                <div class="suptool" >
+                    <img class="indexToolsImage"  src="assets/img/projects/pr1.png" alt="">
+                </div>
+                <div class="suptool">
+                    <img class="indexToolsImage" src="assets/img/projects/pr2.jpg" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="indexToolsItem d-flex justify-content-between align-items-center">
+                <div class="suptool">
+                    <img class="indexToolsImage" src="assets/img/projects/pr3.jpg" alt="">
+                </div>
+                <div class="suptool">
+                    <img class="indexToolsImage" src="assets/img/projects/pr4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workers" id="workers">
+        <div class="container">
+            <h4 class="workersTitle">Руководство</h4>
+            <div class="workersContent d-flex justify-content-between">
+                <div class="suptool">
+                    <img class="workerImg" src="assets/img/workers/wr2.png" alt="">
+                </div>
+                <div class="workersInfo tool">
+                    <h4 class="workersContentTitle">Руководитель сообщества Анисимов Егор Ильич, доктор галактических наук</h4>
+                    <h4 class="workersContentSuptitle">Достижения</h4>
+                    <p class="workersContentText">2023 г. – Сдал телефонный справочник<br/>
+                        2023 г. – Сдал лабораторную работу по типам данных<br/>
+                        2023 г. – Сделал сам(купил) длинную арифметику<br/>
+                        2023 г. – Палиндром прошёл все тесты<br/>
+                        2023 г. – Знание работы quickSort
+                     </p>
+    
+                    <h4 class="workersContentSuptitle">Награды</h4>
+                    <p class="workersContentText">Участие в разработке нормативно-технической документации:<br/>
+                        1. Лучший тимлид по своему мнению<br/>
+                        2. Чемпион мира по шахматам<br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="container">
+            <div class="footerContent d-flex justify-content-around">
+                
+                <div class="footerColumn">
+                    <div class="footerTitle d-flex align-items-center">
+                        <img class="footerLogo" src="assets/img/logo.png" alt="">
+                        <h4 class="footerDescription">Фан-клуб Доры</h4>
+                    </div>
+                    <div class="footerAbout">
+                        <p class="footerColumnAboutItem"><b>Адрес:</b> 196084, Россия, Санкт-Петербург,<br>
+                            Малая Митрофаньевская улица, д.4, литер Л, офис 318</p>
+                        <p class="footerColumnAboutItem"><b>Телефон:</b> +7(911)111-11-11</p>
+                        <p class="footerColumnAboutItem"><b>Email:</b> eianisimov@inbox.ru</p>
+                    </div>
+                </div>
+
+                <div class="footerColumn d-flex flex-column">
+                    <h6 class="footerName">Навигация</h6>
+                    <a class="footerColumnItem" href="index.html#">О компании</a>
+                    <a class="footerColumnItem" href="news.html">Новости</a>
+                    <a class="footerColumnItem" href="contacts.html">Контакты</a>
+                </div>
+                <div class="footerColumn d-flex flex-column">
+                    <h6 class="footerName">СОУТ</h6>
+                    <a class="footerColumnItem" href="">Сводная ведомость результатов проведения СОУТ</a>
+                    <a class="footerColumnItem" href="">Перечень мероприятий</a>
+                </div>
+            </div>
+            <div class="rights">
+                <div class="rights__smtext">© Фан-клуб Доры 2023.Все права защищены.</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
