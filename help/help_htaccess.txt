@@ -1,0 +1,23 @@
+#Установка кодировки на сайте:
+AddDefaultCharset utf-8
+
+#Запрет листинга каталогов(Знак "-" - запрет, "+" - разрешение):
+Options -Indexes
+Options +Indexes
+#Чтобы разрешить для конкретной папки нужно поместить в неё ещё один файл .htaccess и в нём разрешить
+
+#Обращение к страницам сайта без расширений index(index.php):
+Options +MultiViews
+
+#Переопределение индексного файла(сервер будет искать вместо индексного файла другой):
+DirectoryIndex contacts.html
+
+#Вид страницы(корневой папки) в браузере(стилизация):
+IndexOptions FancyIndexing
+IndexOptions FancyIndexing ScanHTMLTitles
+
+#Скрыть определённые файлы(rar) все файлы с расширением rar и zip и файл _index.html:
+IndexIgnore *.rar *.zip _index.html
+IndexIgnore * (Скрыть всё)
+
+

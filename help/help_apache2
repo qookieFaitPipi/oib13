@@ -1,0 +1,27 @@
+1) sudo apt install apache2
+Установка веб-сервера apache
+
+/var/www
+Тут хранятся папки с публикуемыми веб-сайтами
+
+/etc/apache2/sites-avaliable
+Тут хранятся конфиги публикуемых веб сайтов
+
+Если коротко, то чтобы опубликовать веб сайт нужно закинуть папку с сайтом в каталог www и настроить конфигурацию в sites-avaliable (и ещё подправить хост)
+В данном примере моя папка будет называться project-test
+
+2) sudo cp 000-default.conf project-test.conf
+Копируем данные из файла дефолтной конфигурации и вставляем в конфигурацию для нашего сайта
+
+3) sudo nano project-test.conf
+Указываем параметр ServerName 
+
+4) sudo a2ensite project-test
+Привязка конфигурационного файла к веб-сенрверу apache
+
+5) sudo nano /etc/hosts
+В этом файле осуществляется привязка доменов к ip-адресам
+
+6) sudo service apache2 stop
+7) sudo service apache2 start
+8) Вводим в браузере http://project-test
